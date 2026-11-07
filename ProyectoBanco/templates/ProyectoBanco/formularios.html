@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form>
+    <label>Nombre</label>
+    <input type="text" name="txt01"/>
+    </form>
+
+    
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="pepe"/>
+    </form>
+
+   
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="" placeholder="Alexy" size="10"/>
+    </form>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="" placeholder="Alexy" size="10" maxlength="5"/>
+    </form>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="Ana Maria" readonly/>
+    </form>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="" placeholder="nombre" pattern="[a-z] {1,15}" /> 
+    </form>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="" title="Minusculas max 15" pattern="[a-z] {1,15}"/>
+    </form>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value="" required/>
+        <label>Apellido</label>
+        <input type="text" name="txt02" value="" required/>
+        <input type="submit">
+    </form>
+
+    <form>
+        <label>Documento</label>
+        <input type="number" name="txt01"/>
+    </form>
+
+    <form>
+        <label>Calificaciones</label>
+        <input type="number" name="txt01" min="0" max="5"/>
+    </form>
+
+    <form>
+        <label>Calificaciones</label>
+        <input type="number" name="txt01" min="0" max="5" step="0.01"/>
+    </form>
+
+    <form>
+        <label>Ingresos Mensuales</label><br/>
+        <label><input type="checkbox" name="Peliculas" checked="checked" /> Peliculas</label>
+        <label><input type="checkbox" name="Deportes"/>Deportes</label>
+        <label><input type="checkbox" name="Videojuegos"/>Videojuegos</label>
+    </form>
+
+    <form>
+        <label>Ingresos Mensuales</label><br/>
+        <label><input type="radio" name="Ingresos" checked="checked" />Menos de $1.000</label>
+        <label><input type="radio" name="Ingresos"/>De $1.000 a $5.000</label>
+        <label><input type="radio" name="Ingresos"/>Mas de $5.000</label>
+    </form>
+
+    <form>
+        <label> Estado Civil</label><br/>
+        <select name="estadocivil">
+            <option value="Soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="UnionLibre">Union Libre</option>
+        </select>
+    </form>
+    
+    <form>
+        <fieldset>
+            <legend>Datos basicos</legend>
+            <p>
+                <label> Tipo de Documento</label>
+                <select name="tipdoc">
+                    <option value="T.I">T.I</option>
+                    <option value="C.C">C.C</option>
+                    <option value="C.E">C.E</option>
+                </select>
+                <label>Documento</label>
+                <input type="number" name="txt01" value=""/>
+            </p>
+            <p>
+                <label>Nombre</label>
+                <input type="text" name="txt02" value=""/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Genero</legend>
+            <label><input type="radio" name="sex" checked="checked"/>Femenino</label>
+            <label><input type="radio" name="sex"/>Masculino</label>
+        </fieldset>
+    </form>
+
+    <form>
+        <label>Nivel de dolor(entre 0 y 10)</label>
+        <input type="range" name="nivel" value="5" min="0" max="10"/>
+    </form>
+
+    <form>
+        <label>Color</label>
+        <input type="color" name="micolor" value=""/>
+    </form>
+
+    <form>
+        <input type="image" src="https://png.pngtree.com/element_our/20200702/ourmid/pngtree-mouse-hand-click-image_2281134.jpg" alt="Submit" width="48" height="48" />
+    </form>
+
+    <form action="https://www.youtube.com" target="_blank" >
+        <input type="submit" value="ir a Youtube" />
+    </form>
+
+    <form>
+        <label>Nombre</label>
+        <input type="text" name="txt01" value=""/>
+        <input type="reset" value="Limpiar"/>
+    </form>
+
+    <form>
+        <input type="button" value="Saludo" onclick="msg()">
+    </form>
+    <script>
+    function msg(){
+            alert("Hola Mundo! JavaScript");
+    }
+    </script>
+
+    <form>
+        <label>Tipo Hidden</label>
+        <input type="hidden" name="x" value="" />
+    </form>
+
+    <form action="pagina.html" method="post" enctype="multipart/form-data" target="_blank">
+        <p> <label> Adjunto <input type="file" name="file01"></label></p>
+    </form>
+
+    <form>
+        <p> <label> Descripción</label></p>
+        <textarea name="descripcion" cols="10" rows="5"></textarea>
+    </form>
+
+    <form>
+        <p> <label> Operador: <input type="text" name="val01" list="miLista"></label></p>
+    </form>
+    <datalist id="miLista">
+        <option value="Movistar">Movistar</option>
+        <option value="Claro">Claro</option>    
+        <option value="Tigo">Tigo</option>
+    </datalist>
+
+    <form oninput="rta.value=parseInt(rg.value)">
+        <p> <label> Control de Rango</label></p>
+        <input type="range" name="rg" min="1" max="10" step="1" value="5"/>
+        <output name="rta" for="rg">5</output>
+
+    </form>
+</body>
+</html>

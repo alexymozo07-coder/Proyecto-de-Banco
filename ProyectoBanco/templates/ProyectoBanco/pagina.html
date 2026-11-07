@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Taller 2</title>
+</head>
+<body>
+    
+    <h1>Calculo de Promedio</h1>
+    <form oninput="rta.value=(parseInt(val01.value)+parseInt(val02.value)+parseInt(val03.value))/3">
+        <p>
+            <label> Primer Número:
+                <input type="number" name="val01" value="">
+            </label>
+        </p>
+        <p>
+            <label> Segundo Número:
+                <input type="number" name="val02" value="">
+            </label>
+        </p>
+        <p>
+            <label> Tercer Número:
+                <input type="number" name="val03" value="">
+            </label>
+        </p>
+        <p>
+            <label> Su promedio es:
+                <output name="rta" for="val01 val02 val03">0</output>
+            </label>
+        </p>
+    </form>
+</body>
+</html>

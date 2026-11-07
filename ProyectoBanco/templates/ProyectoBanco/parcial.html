@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Creacion de Usuario</title>
+</head>
+<body>
+    <h1>Creacion de Usuario</h1>
+
+    <table border =1>
+        <thead>
+            <tr>
+                <th>Informacion</th>
+                <th>Contenido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td> <input type="text" name="nombre"></td>
+            </tr>
+            
+                <td>Genero</td>
+                <td>
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                     </br>
+                    <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                </td>  
+            </tr>
+            <tr>
+                <td>Estado Civil</td>
+                <td>
+                    <select name="estadoCivil">
+                        <option value="soltero">Union Libre</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Soltero(a)</option>
+                        <option value="viudo">Viudo(a)</option>
+                    </select>
+            </tr>
+            <tr>
+                <td>Ocupaciones</td>
+                <td>
+                    <label><input type="checkbox" name="ocupacion" value="estudiante"> Estudiante</label>
+                    </br>
+                    <label><input type="checkbox" name="ocupacion" value="trabajador"> Empresario</label>
+                    <label><input type="checkbox" name="ocupacion" value="desempleado">Empleado</label>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                <p><label> Descripción de su personalidad:</label></p>
+                <textarea name="descripcion" cols="40" rows="3" ></textarea>
+                </td>  
+            </tr>    
+            
+        </tbody>
+        <tfoot>
+               <th> 
+                <label><input type="submit" name="Informacion" value="Enviar Informacion" ></label>
+                
+               </th>
+                  
+        </tfoot>
+    </table>
+</body>
+</html>
